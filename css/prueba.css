@@ -1,0 +1,32 @@
+/* Quita el triángulo por defecto y permite centrar el H1 */
+summary {
+    list-style: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Opcional: añade una flecha que gire al lado del H1 */
+summary::after {
+    content: '▼';
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+/* Asegura que el contenedor azul crezca según el contenido */
+.search-container {
+    height: auto; /* Cambiamos height fijo por auto */
+    min-height: 100px; 
+    padding: 40px 0;
+}

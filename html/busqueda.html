@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/busqueda.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Busqueda</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Alaz</div>
+        <img class="imagen" src="/img/vuelo.png" alt="Logo" />
+
+        <div class="menu-vuelos">
+          <ul>
+            <li>
+              Vuelos
+              <ul class="submenu">
+                <li>Nacionales</li>
+                <li>Internacionales</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-actions">
+          <button
+            class="btn-login"
+            onclick="window.location.href = 'login.html'"
+          >
+            Iniciar Sesión
+          </button>
+          <div class="cart-icon">
+            <span class="icon">🛒</span>
+            <span class="cart-count">0</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+     
+    <div class="search-container">
+      <h1>Busca tu próximo destino</h1>
+      <div class="search-box">
+        <div class="contenedor-input-vuelo">
+          <label class="etiqueta-input">Origen</label>
+          <input type="text" id="origen" class="entrada-vuelo" />
+          <div class="icono-intercambio">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#002344"
+              stroke-width="2"
+            >
+              <path
+                d="M7 16V4M7 4L3 8M7 4L11 8M17 8V20M17 20L21 16M17 20L13 16"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="contenedor-input-vuelo-destino">
+          <label class="etiqueta-input">Destino</label>
+          <input type="text" id="origen" class="entrada-vuelo" />
+        </div>
+
+        <div class="contenedor-input-vuelo">
+          <label class="etiqueta-input">Salida</label>
+          <input type="date" id="origen" class="entrada-vuelo" />
+        </div>
+        <div class="contenedor-input-vuelo-destino datosfechaRegreso">
+          <label class="etiqueta-input">Regreso</label>
+          <input type="date" class="entrada-vuelo" />
+        </div>
+        <div class="contenedor-input-vuelo-destino viajeros">
+          <label class="etiqueta-input"
+            ><i class="fa-duotone fa-solid fa-users"></i> Viajeros</label
+          >
+          <input type="number" class="entrada-vuelo" min="1" max="100" />
+        </div>
+
+        <button class="btn-search" onclick="window.location.href = 'busqueda.html'" >Buscar Vuelos</button>
+      </div>
+    </div>
+
+    <div class="mensajeConsulta">
+      <h2>Origen - Destino | 1 Viajero</h2>
+    </div>
+
+    <div class="container-busquedaresultado">
+      <div class="filtrosbusqueda">
+        <fieldset>
+          <legend><h2>Filtros</h2></legend>
+          <div class="desplegable">
+            <button class="boton-filtro" id="botonFiltro">
+              Ordenar <i class="fa-sharp fa-solid fa-angle-down"></i>
+            </button>
+
+            <div class="contenido-desplegable" id="menuOpciones">
+              <a href="#" class="opcion">Mejor</a>
+              <a href="#" class="opcion activa">El más barato primero</a>
+              <a href="#" class="opcion">El más rápido primero</a>
+            </div>
+          </div>
+
+          <details class="acordeon-escalas">
+            <summary class="cabecera-filtro">Escalas</summary>
+
+            <div class="contenido-escalas">
+              <div class="opcion-escala">
+                <input type="checkbox" name="escala" id="directo" />
+                <label for="directo">Directo</label>
+              </div>
+              <div class="opcion-escala">
+                <input type="checkbox" name="escala" id="una-escala" />
+                <label for="una-escala">1 Escala</label>
+              </div>
+            </div>
+          </details>
+
+          <details class="acordeon-escalas">
+            <summary class="cabecera-filtro">Duración del viaje</summary>
+
+            <div class="contenido-escalas">
+              <div class="info-rango">
+                <label for="duracion">1,0 horas - 8,0 horas</label>
+                <input
+                  type="range"
+                  name="duracion"
+                  id="duracion"
+                  min="1.0"
+                  max="8.0"
+                  step="0.5"
+                  value="8.0"
+                />
+              </div>
+            </div>
+          </details>
+
+          <details class="acordeon-escalas">
+            <summary class="cabecera-filtro">Horas de salida</summary>
+
+            <div class="contenido-escalas">
+              <div class="info-rango">
+                <label for="ida">Ida</label>
+                <label for="range"
+                  >00:00 <small>a.m</small> - 23:59 <small>p.m</small></label
+                >
+                <input
+                  type="range"
+                  name="duracion"
+                  id="duracion"
+                  min="00.00"
+                  max="23.59"
+                />
+              </div>
+              <div class="info-rango">
+                <label for="ida">Regreso</label>
+                <label for="range"
+                  >00:00 <small>a.m</small> - 23:59 <small>p.m</small></label
+                >
+                <input
+                  type="range"
+                  name="duracion"
+                  id="duracion"
+                  min="00.00"
+                  max="23.59"
+                />
+              </div>
+            </div>
+          </details>
+         
+        </fieldset>
+      </div>
+
+      <div class="container-tarjetas">
+        <div class="flight-card shake">
+          <div class="airline-info">
+            <strong>AVIANCA</strong>
+            <p>Directo</p>
+          </div>
+          <div class="time-info">
+            <p>08:00 AM - 11:30 AM</p>
+            <span>BOG - MEX</span>
+          </div>
+          <div class="price-info">
+            <p class="price">$250.000</p>
+            <button
+              class="btn-book"
+              onclick="window.location.href = 'reserva.html'"
+            >
+              Reservar
+            </button>
+          </div>
+        </div>
+        <div class="flight-card shake">
+          <div class="airline-info">
+            <strong>AVIANCA</strong>
+            <p>Directo</p>
+          </div>
+          <div class="time-info">
+            <p>08:00 AM - 11:30 AM</p>
+            <span>BOG - MEX</span>
+          </div>
+          <div class="price-info">
+            <p class="price">$250.000</p>
+            <button
+              class="btn-book"
+              onclick="window.location.href = 'reserva.html'"
+            >
+              Reservar
+            </button>
+          </div>
+        </div>
+        <div class="flight-card shake">
+          <div class="airline-info">
+            <strong>AVIANCA</strong>
+            <p>Directo</p>
+          </div>
+          <div class="time-info">
+            <p>08:00 AM - 11:30 AM</p>
+            <span>BOG - MEX</span>
+          </div>
+          <div class="price-info">
+            <p class="price">$250.000</p>
+            <button
+              class="btn-book"
+              onclick="window.location.href = 'reserva.html'"
+            >
+              Reservar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+    background-image: url("/img/loginUser.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 1px 2px 8px rgba(0,0,0,0.5);
+}
+.Titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Titulo h1 {
+    color: #003366;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.grupoform {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box; 
+    border: 1px solid #888;
+    border-radius: 20px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:#ffc107;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+button:hover {
+    background-color:#c79706;
+}
+.restablecer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+}
+.pie-pagina {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+}

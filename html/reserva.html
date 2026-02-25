@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva - AlaZ</title>
+    <link rel="stylesheet" href="/css/stylesreserva.css">
+</head>
+<body>
+
+    <header class="encabezado-principal">
+        <div class="contenedor-encabezado">
+            <h1 class="logotipo">AlaZ</h1>
+            <div class="info-vuelo">
+                <strong>Bogotá a Arauca</strong>
+                <span>Dom, 15 Feb. 2026 — Lun, 16 Feb. 2026 | 1 Adulto</span>
+            </div>
+            <div class="info-carrito">  
+                <div class="etiqueta-precio">COP $$ </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenedor-principal">
+        <section class="seccion-pasajeros">
+            <div class="encabezado-seccion">
+                <h2>Pasajeros</h2>                
+            </div>
+            <p class="subtitulo">Ingresa tu nombre y apellido(s) tal y como aparecen en el pasaporte o documento de identidad.</p>
+
+            <div class="tarjeta">
+                <h3>Adulto 1:</h3>
+                <div class="fila-formulario">
+                    <select class="entrada-formulario">
+                        <option value="" disabled selected>Género*</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                        <option value="X">No binario / Otro</option>
+                    </select>
+                    <input type="text" placeholder="Nombre*" class="entrada-formulario">
+                    <input type="text" placeholder="Apellido(s)*" class="entrada-formulario">
+                </div>
+                <div class="fila-formulario">
+                    <div class="grupo-fecha">
+                        <label>Fecha de nacimiento*</label>                         
+                        <div class="selectores-fecha">
+                            <select><option>Día</option></select>
+                            <select><option>Mes</option></select>
+                            <select><option>Año</option></select>
+                        </div>
+                    </div>
+                    <select class="entrada-formulario">
+                        <option value="" disabled selected>Nacionalidad de tu documento de viaje*</option>
+                    </select>
+                </div>                
+            </div>
+        </section>
+
+        <section class="seccion-titular">
+            <div class="tarjeta">
+                <h3>Titular de la reserva</h3>
+                <p class="subtitulo">Será la persona que recibirá la confirmación de la reserva y la única autorizada para solicitar cambios o reembolsos.</p>
+                
+                <div class="fila-formulario">
+                    <input type="text" placeholder="Nombre*" class="entrada-formulario">
+                    <input type="text" placeholder="Teléfono*" class="entrada-formulario">                    
+                </div>
+                <div class="fila-formulario">
+                    <input type="email" placeholder="Correo electrónico*" class="entrada-formulario">
+                    <input type="email" placeholder="Confirmar correo electrónico*" class="entrada-formulario">
+                </div>
+            </div>
+        </section>
+
+        <section class="politicas">
+            <label class="contenedor-checkbox">
+                <input type="checkbox"> Autorizo el tratamiento de mis datos personales conforme a la <a href="#">Política de Privacidad</a>.
+            </label>
+            <label class="contenedor-checkbox">
+                <input type="checkbox"> Acepto el uso de mis datos personales para recibir promociones, ofertas y novedades que AlaZ tiene para mi.
+            </label>
+        </section>
+
+        <div class="acciones-finales">
+            <button class="boton-primario">Continuar</button>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>Consulta todas las condiciones de <a href="#">retracto y desistimiento</a> aplicables para Colombia.</p>
+        <p>Copyright © AlaZ 2026</p>
+    </footer>
+
+</body>
+</html>

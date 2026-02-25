@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlaZ - Reserva de Vuelos</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Alaz</div>
+        <img class="imagen" src="/img/vuelo.png" alt="Logo" />
+
+        <div class="menu-vuelos">
+          <ul>
+            <li>
+              Vuelos
+              <ul class="submenu">
+                <li>Nacionales</li>
+                <li>Internacionales</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-actions">
+          <button
+            class="btn-login"
+            onclick="window.location.href = 'login.html'"
+          >
+            Iniciar Sesión
+          </button>
+          <div class="cart-icon">
+            <span class="icon">🛒</span>
+            <span class="cart-count">0</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="carrusel">
+      <img src="/img/promo2.jpg" alt="promo 2" />
+    </div>
+
+    <div class="search-container">
+      <h1>Busca tu próximo destino</h1>
+      <div class="search-box">
+        <div class="contenedor-input-vuelo">
+          <label class="etiqueta-input">Origen</label>
+          <input type="text" id="origen" class="entrada-vuelo" />
+          <div class="icono-intercambio">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#002344"
+              stroke-width="2"
+            >
+              <path
+                d="M7 16V4M7 4L3 8M7 4L11 8M17 8V20M17 20L21 16M17 20L13 16"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="contenedor-input-vuelo-destino">
+          <label class="etiqueta-input">Destino</label>
+          <input type="text" id="origen" class="entrada-vuelo" />
+        </div>
+
+        <div class="contenedor-input-vuelo">
+          <label class="etiqueta-input">Salida</label>
+          <input type="date" id="origen" class="entrada-vuelo" />
+        </div>
+        <div class="contenedor-input-vuelo-destino datosfechaRegreso">
+          <label class="etiqueta-input">Regreso</label>
+          <input type="date" class="entrada-vuelo" />
+        </div>
+        <div class="contenedor-input-vuelo-destino viajeros">
+          <label class="etiqueta-input"
+            ><i class="fa-duotone fa-solid fa-users"></i> Viajeros</label
+          >
+          <input type="number" class="entrada-vuelo" min="1" max="100" />
+        </div>
+
+        <button class="btn-search" onclick="window.location.href = 'busqueda.html'" >Buscar Vuelos</button>
+      </div>
+    </div>
+
+    <div class="container-explora">
+      <h1>Explora cualquier destino en marzo</h1>
+      <div class="container-tarjeta-explora">
+        <div class="tarjeta-explora pulse">
+          <img src="/img/promo1.jpg" alt="explora1" />
+          <h2>Colombia</h2>
+          <div class="info">
+            <div>
+              <p>Vuelos desde</p>
+              <span>Directo</span>
+            </div>
+            <p>$110.521</p>
+          </div>
+        </div>
+        <div class="tarjeta-explora pulse">
+          <img src="/img/promo1.jpg" alt="explora1" />
+          <h2>Colombia</h2>
+          <div class="info">
+            <div>
+              <p>Vuelos desde</p>
+              <span>Directo</span>
+            </div>
+            <p>$110.521</p>
+          </div>
+        </div>
+        <div class="tarjeta-explora pulse">
+          <img src="/img/promo1.jpg" alt="explora1" />
+          <h2>Colombia</h2>
+          <div class="info">
+            <div>
+              <p>Vuelos desde</p>
+              <span>Directo</span>
+            </div>
+            <p>$110.521</p>
+          </div>
+        </div>
+        <div class="tarjeta-explora pulse">
+          <img src="/img/promo1.jpg" alt="explora1" />
+          <h2>Colombia</h2>
+          <div class="info">
+            <div>
+              <p>Vuelos desde</p>
+              <span>Directo</span>
+            </div>
+            <p>$110.521</p>
+          </div>
+        </div>
+        <div class="tarjeta-explora pulse">
+          <img src="/img/promo1.jpg" alt="explora1" />
+          <h2>Colombia</h2>
+          <div class="info">
+            <div>
+              <p>Vuelos desde</p>
+              <span>Directo</span>
+            </div>
+            <p>$110.521</p>
+          </div>
+        </div>
+        <div class="tarjeta-explora pulse">
+          <img src="/img/promo1.jpg" alt="explora1" />
+          <h2>Colombia</h2>
+          <div class="info">
+            <div>
+              <p>Vuelos desde</p>
+              <span>Directo</span>
+            </div>
+            <p>$110.521</p>
+          </div>
+        </div>
+        <div class="tarjeta-explora pulse">
+          <img src="/img/promo1.jpg" alt="explora1" />
+          <h2>Colombia</h2>
+          <div class="info">
+            <div>
+              <p>Vuelos desde</p>
+              <span>Directo</span>
+            </div>
+            <p>$110.521</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <h1>¿Necesitas Ayuda?</h1>
+    <ul>
+      <li><a href="contactanos.html">Contactanos</a></li>
+    </ul>
+    <div class="infoFooter">
+      <p>
+        Consulta todas las condiciones de
+        <a href="#">retracto y desistimiento</a> aplicables para Colombia.
+      </p>
+      <p>Copyright © AlaZ 2026</p>
+    </div>
+  </footer>
+</html>
