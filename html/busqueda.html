@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/css/busqueda.css" />
+    <link rel="stylesheet" href="../css/busqueda.css" />
 
     <link
       rel="stylesheet"
@@ -15,7 +15,7 @@
     <header>
       <nav class="navbar">
         <div class="logo">Alaz</div>
-        <img class="imagen" src="/img/vuelo.png" alt="Logo" />
+        <img class="imagen" src="../img/vuelo.png" alt="Logo" />
 
         <div class="menu-vuelos">
           <ul>
@@ -78,7 +78,7 @@
         </div>
         <div class="contenedor-input-vuelo-destino datosfechaRegreso">
           <label class="etiqueta-input">Regreso</label>
-          <input type="date" class="entrada-vuelo" />
+          <input type="date" id="regreso" class="entrada-vuelo" />
         </div>
         <div class="contenedor-input-vuelo-destino viajeros">
           <label class="etiqueta-input"
@@ -131,11 +131,11 @@
 
             <div class="contenido-escalas">
               <div class="info-rango">
-                <label for="duracion">1,0 horas - 8,0 horas</label>
+                <label for="duracionViaje">1,0 horas - 8,0 horas</label>
                 <input
                   type="range"
                   name="duracion"
-                  id="duracion"
+                  id="duracionViaje"
                   min="1.0"
                   max="8.0"
                   step="0.5"
@@ -150,27 +150,27 @@
 
             <div class="contenido-escalas">
               <div class="info-rango">
-                <label for="ida">Ida</label>
-                <label for="range"
+                <label  >Ida</label>
+                <label for="rangeIda"
                   >00:00 <small>a.m</small> - 23:59 <small>p.m</small></label
                 >
                 <input
                   type="range"
-                  name="duracion"
-                  id="duracion"
+                  name="rangeIda"
+                  id="rangeIda"
                   min="00.00"
                   max="23.59"
                 />
               </div>
               <div class="info-rango">
-                <label for="ida">Regreso</label>
-                <label for="range"
+                <label >Regreso</label>
+                <label for="rangeRegreso"
                   >00:00 <small>a.m</small> - 23:59 <small>p.m</small></label
                 >
                 <input
                   type="range"
-                  name="duracion"
-                  id="duracion"
+                  name="rangeRegreso"
+                  id="rangeRegreso"
                   min="00.00"
                   max="23.59"
                 />
