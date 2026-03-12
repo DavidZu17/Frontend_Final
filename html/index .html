@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AlaZ - Reserva de Vuelos</title>
+    <meta
+      name="description"
+      content="Reserva y busqueda  de vuelos internacionales y nacionales, los mas economicos y rapidos"
+    />
+    <meta
+      name="keywords"
+      content="vuelos,reservas,internacional,nacional,vuelos baratos,vuelo mas rapido,avion,aviones"
+    />
+    <meta name="author" content="David Escobar Zuñiga" />
+    <link rel="canonical" href="http://Www.MañanaLosLaDan.com" />
+    <meta name="robots" content="index,follow" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link
       rel="stylesheet"
@@ -70,12 +81,12 @@
         </div>
         <div class="contenedor-input-vuelo-destino">
           <label class="etiqueta-input">Destino</label>
-          <input type="text" id="origen" class="entrada-vuelo" />
+          <input type="text" id="destino" class="entrada-vuelo" />
         </div>
 
         <div class="contenedor-input-vuelo">
           <label class="etiqueta-input">Salida</label>
-          <input type="date" id="origen" class="entrada-vuelo" />
+          <input type="date" id="salida" class="entrada-vuelo" />
         </div>
         <div class="contenedor-input-vuelo-destino datosfechaRegreso">
           <label class="etiqueta-input">Regreso</label>
@@ -88,12 +99,17 @@
           <input type="number" class="entrada-vuelo" min="1" max="100" />
         </div>
 
-        <button class="btn-search" onclick="window.location.href = 'busqueda.html'" >Buscar Vuelos</button>
+        <button
+          class="btn-search"
+          onclick="window.location.href = 'busqueda.html'"
+        >
+          Buscar Vuelos
+        </button>
       </div>
     </div>
 
     <div class="container-explora">
-      <h1>Explora cualquier destino en marzo</h1>
+      <h2>Explora cualquier destino en marzo</h2>
       <div class="container-tarjeta-explora">
         <div class="tarjeta-explora pulse">
           <img src="/img/promo1.jpg" alt="explora1" />
@@ -174,19 +190,19 @@
         </div>
       </div>
     </div>
+    <!-- footer dentro del body -->
+    <footer>
+      <h2>¿Necesitas Ayuda?</h2>
+      <ul>
+        <li><a href="contactanos.html">Contactanos</a></li>
+      </ul>
+      <div class="infoFooter">
+        <p>
+          Consulta todas las condiciones de
+          <a href="#">retracto y desistimiento</a> aplicables para Colombia.
+        </p>
+        <p>Copyright © AlaZ 2026</p>
+      </div>
+    </footer>
   </body>
-
-  <footer>
-    <h1>¿Necesitas Ayuda?</h1>
-    <ul>
-      <li><a href="contactanos.html">Contactanos</a></li>
-    </ul>
-    <div class="infoFooter">
-      <p>
-        Consulta todas las condiciones de
-        <a href="#">retracto y desistimiento</a> aplicables para Colombia.
-      </p>
-      <p>Copyright © AlaZ 2026</p>
-    </div>
-  </footer>
 </html>
